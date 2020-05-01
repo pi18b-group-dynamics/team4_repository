@@ -2,7 +2,7 @@
 
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
 {
-    WNDCLASS windowClass = {0};
+    /*WNDCLASS windowClass = {0};
     windowClass.lpfnWndProc = WindowProc;
     windowClass.hInstance = hInstance;
     windowClass.lpszClassName = L"HELLO_WORLD";
@@ -28,6 +28,8 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
             TranslateMessage(&msg);
             DispatchMessage(&msg);
         }
-    }
+    }*/
+
+
     return 0;
 }
