@@ -11,25 +11,31 @@
 #pragma comment(lib, "dxguid.lib")
 #pragma comment(lib, "winmm.lib")
 
+struct WaveHeaderType
+{
+	char chunkId[4];
+	unsigned long chunkSize;
+	char format[4];
+	char subChunkId[4];
+	unsigned long subChunkSize;
+	unsigned short audioFormat;
+	unsigned short numChannels;
+	unsigned long sampleRate;
+	unsigned long bytesPerSecond;
+	unsigned short blockAlign;
+	unsigned short bitsPerSample;
+	char dataChunkId[4];
+	unsigned long dataSize;
+};
+
 class AudioCore
 {
 private:
-	struct WaveHeaderType
-	{
-		char chunkId[4];
-		unsigned long chunkSize;
-		char format[4];
-		char subChunkId[4];
-		unsigned long subChunkSize;
-		unsigned short audioFormat;
-		unsigned short numChannels;
-		unsigned long sampleRate;
-		unsigned long bytesPerSecond;
-		unsigned short blockAlign;
-		unsigned short bitsPerSample;
-		char dataChunkId[4];
-		unsigned long dataSize;
-	};
+	IDirectSoundBuffer8** SoundBuffers;
+	IDirectSound8* SoundDevice;
+	IDirectSoundBuffer8* primaryBuffer;
+	LONG BackgroundVolume;
+	LONG ForwardVolume;
 
 public:
 	AudioCore(HWND wnd);
@@ -38,7 +44,5 @@ public:
 	void PlayForward(int SoundIndex);
 	void SetBackgroundVolume(int Volume); // - 10000; 0;
 	void SetForwardVolume(int Volume);
-	IDirectSoundBuffer8** SoundBuffers;
-	IDirectSound8* SoundDevice;
-	IDirectSoundBuffer8* primaryBuffer;
+	
 };
