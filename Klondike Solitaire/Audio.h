@@ -36,7 +36,7 @@ private:
 	IDirectSoundBuffer8* primaryBuffer;
 	LONG BackgroundVolume;
 	LONG ForwardVolume;
-
+	int BackgroundIndex;
 public:
 	AudioCore(HWND wnd);
 	~AudioCore();
@@ -44,5 +44,6 @@ public:
 	void PlayForward(int SoundIndex);
 	void SetBackgroundVolume(int Volume); // - 10000; 0;
 	void SetForwardVolume(int Volume);
-	
+	void StopBackground();
+	void GetBackgroundIndex();
 };

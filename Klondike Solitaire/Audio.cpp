@@ -17,3 +17,9 @@ void AudioCore::SetBackgroundVolume(int Volume)
 
 void AudioCore::SetForwardVolume(int Volume)
 {}
+
+void AudioCore::StopBackground()
+{}
+
+void AudioCore::GetBackgroundIndex()
+{}
