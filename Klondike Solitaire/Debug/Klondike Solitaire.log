@@ -1,9 +1,0 @@
-﻿  Audio.cpp
-E:\team4_repository\team4_repository\Klondike Solitaire\Audio.cpp(4,1): error C2511: AudioCore::AudioCore(void): перегруженная функция-член не найдена в "AudioCore"
-E:\team4_repository\team4_repository\Klondike Solitaire\Audio.h(14): message : см. объявление "AudioCore"
-  Game.cpp
-  Input.cpp
-  Shell.cpp
-  main.cpp
-  Vigeo.cpp
-  Создание кода...
