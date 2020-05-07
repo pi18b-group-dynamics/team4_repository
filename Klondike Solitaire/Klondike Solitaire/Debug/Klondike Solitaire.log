@@ -1,0 +1,9 @@
+﻿  Audio.cpp
+  Game.cpp
+  Input.cpp
+  Shell.cpp
+  Video.cpp
+  WinMain.cpp
+  Создание кода...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: ссылка на неразрешенный внешний символ _main в функции "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\roman\Documents\team4_repository\Klondike Solitaire\Klondike Solitaire\Debug\Klondike Solitaire.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
