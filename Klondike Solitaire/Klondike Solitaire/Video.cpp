@@ -3,6 +3,9 @@
 VideoCore::VideoCore()
 {}
 
+VideoCore::VideoCore(const VideoCore&)
+{}
+
 VideoCore::~VideoCore()
 {}
 

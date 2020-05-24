@@ -3,6 +3,9 @@
 AudioCore::AudioCore()
 {}
 
+AudioCore::AudioCore(const AudioCore&)
+{}
+
 AudioCore::~AudioCore()
 {}
 

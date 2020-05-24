@@ -1,3 +1,4 @@
 ﻿  Game.cpp
-C:\Users\roman\Documents\team4_repository\Klondike Solitaire\Klondike Solitaire\Game.cpp(17): warning C4715: GameEngine::Init: значение возвращается не при всех путях выполнения
+  WinMain.cpp
+  Создание кода...
   Klondike Solitaire.vcxproj -> C:\Users\roman\Documents\team4_repository\Klondike Solitaire\Klondike Solitaire\Debug\Klondike Solitaire.exe

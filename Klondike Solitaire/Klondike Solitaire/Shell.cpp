@@ -3,6 +3,9 @@
 ShellCore::ShellCore()
 {}
 
+ShellCore::ShellCore(const ShellCore&)
+{}
+
 ShellCore::~ShellCore()
 {}
 

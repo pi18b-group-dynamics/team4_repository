@@ -3,6 +3,9 @@
 InputCore::InputCore()
 {}
 
+InputCore::InputCore(const InputCore&)
+{}
+
 InputCore::~InputCore()
 {}
 
