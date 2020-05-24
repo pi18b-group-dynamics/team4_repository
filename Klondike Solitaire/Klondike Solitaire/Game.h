@@ -13,7 +13,7 @@ class GameEngine
 public:
 	GameEngine();
 	~GameEngine();
-	bool Init();
+	bool Init(HINSTANCE hInstance, PSTR pScmdline);
 	void Destroy();
 	void Run();
 	std::wstring ErrMsg();

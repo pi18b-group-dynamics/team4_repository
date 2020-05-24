@@ -5,7 +5,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline,
 {
 	GameEngine* Engine;
 	Engine = new GameEngine();
-	if(!Engine->Init())
+	if(!Engine->Init(hInstance, pScmdline))
 	{
 		Engine->Destroy();
 		MessageBox(NULL, Engine->ErrMsg().c_str(), L"Error", MB_OK);

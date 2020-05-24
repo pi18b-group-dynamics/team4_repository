@@ -6,7 +6,7 @@ GameEngine::GameEngine()
 GameEngine::~GameEngine()
 {}
 
-bool GameEngine::Init()
+bool GameEngine::Init(HINSTANCE hInstance, PSTR pScmdline)
 {
 	return false;
 }
