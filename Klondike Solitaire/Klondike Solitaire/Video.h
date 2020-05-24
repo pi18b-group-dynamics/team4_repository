@@ -7,7 +7,9 @@ class VideoCore
 public:
 	VideoCore();
 	~VideoCore();
-
+	bool Init();
+	void Destroy();
+	void Run();
 private:
 
 };
