@@ -9,7 +9,6 @@ public:
 	~InputCore();
 	bool Init();
 	void Destroy();
-	void Run();
 private:
 
 };

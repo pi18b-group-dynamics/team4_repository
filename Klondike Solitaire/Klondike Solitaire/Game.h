@@ -26,5 +26,8 @@ public:
 private:
 	std::wstring TextMsg;
 	VideoCore* Video;
+	InputCore* Input;
+	AudioCore* Audio;
+	ShellCore* Shell;
 };
 #endif

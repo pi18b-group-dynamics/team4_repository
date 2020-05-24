@@ -9,7 +9,6 @@ public:
 	~VideoCore();
 	bool Init();
 	void Destroy();
-	void Run();
 private:
 
 };

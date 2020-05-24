@@ -9,7 +9,6 @@ public:
 	~ShellCore();
 	bool Init();
 	void Destroy();
-	void Run();
 private:
 
 };

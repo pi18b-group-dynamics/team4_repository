@@ -11,11 +11,11 @@ GameEngine::~GameEngine()
 
 bool GameEngine::Init(HINSTANCE hInstance, PSTR pScmdline)
 {
-	//Shell = new ShellCore();
-	//Audio = new AudioCore();
-	//Input = new InputCore();
-	//Video = new VideoCore();
-	/*if(!Shell->Init())
+	Shell = new ShellCore();
+	Audio = new AudioCore();
+	Input = new InputCore();
+	Video = new VideoCore();
+	if(!Shell->Init())
 	{
 		TextMsg += L"Ошибка инициализации ядра оболочки";
 		return false;
@@ -39,7 +39,7 @@ bool GameEngine::Init(HINSTANCE hInstance, PSTR pScmdline)
 	{
 		TextMsg += L"Ошибка инициализации видеодрайвера";
 		return false;
-	}*/
+	}
 	return true;
 }
 

@@ -9,7 +9,6 @@ public:
 	~AudioCore();
 	bool Init();
 	void Destroy();
-	void Run();
 private:
 };
 
