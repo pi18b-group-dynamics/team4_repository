@@ -8,7 +8,12 @@ GameEngine::~GameEngine()
 
 bool GameEngine::Init(HINSTANCE hInstance, PSTR pScmdline)
 {
-	return false;
+	if(!Initialize())
+	{
+		TextMsg += L"Ошибка инициализации объекта Engine";
+		return false;
+	}
+	
 }
 
 void GameEngine::Destroy()
@@ -19,5 +24,10 @@ void GameEngine::Run()
 
 std::wstring GameEngine::ErrMsg()
 {
-	return std::wstring();
+	return TextMsg;
+}
+
+bool GameEngine::Initialize()
+{
+	return false;
 }

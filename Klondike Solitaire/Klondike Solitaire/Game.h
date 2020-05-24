@@ -18,5 +18,6 @@ public:
 	void Run();
 	std::wstring ErrMsg();
 private:
-
+	bool Initialize();
+	std::wstring TextMsg;
 };
