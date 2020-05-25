@@ -12,5 +12,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline,
 	}
 	Engine->Run();
 	Engine->Destroy();
+	delete Engine;
 	return 0;
 }

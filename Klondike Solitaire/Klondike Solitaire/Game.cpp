@@ -56,5 +56,6 @@ std::wstring GameEngine::ErrMsg()
 
 bool GameEngine::Initialize()
 {
+	
 	return false;
 }
