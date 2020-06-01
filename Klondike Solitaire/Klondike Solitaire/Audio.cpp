@@ -11,11 +11,8 @@ AudioCore::~AudioCore()
 
 bool AudioCore::Init()
 {
-	return false;
+	return true;
 }
 
 void AudioCore::Destroy()
-{}
-
-void AudioCore::Run()
 {}

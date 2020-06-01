@@ -11,11 +11,8 @@ ShellCore::~ShellCore()
 
 bool ShellCore::Init()
 {
-	return false;
+	return true;
 }
 
 void ShellCore::Destroy()
-{}
-
-void ShellCore::Run()
 {}

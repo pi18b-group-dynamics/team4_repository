@@ -11,11 +11,8 @@ InputCore::~InputCore()
 
 bool InputCore::Init()
 {
-	return false;
+	return true;
 }
 
 void InputCore::Destroy()
-{}
-
-void InputCore::Run()
 {}
